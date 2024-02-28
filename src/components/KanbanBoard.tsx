@@ -87,8 +87,6 @@ export function KanbanBoard() {
       try {
         const response = await apiClient().get("processes");
 
-        console.log("response", response);
-
         setTasks(response.data);
       } catch (error) {
         console.error("Erro ao obter dados:", error);
